@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru"> <!--т.к. сайт рус.язычный поставил ру, в случае добавление англ переименовать в "en" (не обязательно)-->
+<head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0"> <!--Параметры для мобильной версии сайта-->
+        <title> Site </title> <!--Название сайта-->
+        <link rel="stylesheet" href="./css/main.css"> <!--Путь к папке созданный нами для разработки css-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> <!--Выбираем шрифт в googleapis, выбранный шрифт помещаешь head-link=href=.    Все другие элементы, шрифты взятые с сайтов, библиотек пишем точно так же.-->
+        
+
+</head>
+<body>
+
+<div class="header"> <!--Создаем для дальнейшего развития стиля в CSS-->
+        <h1 class="header-title"> Доманский Альберт</h1>   
+        <p class="header-subtitle"> фрилансер, веб-разработчик, создание сайтов </p>
+        <div class="header-arrow"> 
+            <img src="./img/header/chevron-down.svg" alt="Arrow"> <!--SRC Путь к файлу. ALT (можно указывать лбое название в этом теге)-->
+        </div>
+</div>
+   
+<div class="portfolio">
+        <div class="container"> 
+           <h2 class="portfolio-header"> Портфолио </h2> 
+
+           <!--portfolio-cards-wrapper -->
+           <div class="portfolio-cards-wrapper">
+          
+         <!--Card forest -->
+         <div class="card">
+            <img  class="card-img" src="./img/portfolio/forest.jpg" alt="многостраничный сайт">
+            <h3  class="card-title"> Многостраничный сайт </h3>
+            <p> Верстка многостраничого сайта. </p>
+         </div>
+          <!--Card unit -->
+        <div class="card">
+            <img  class="card-img" src="./img/portfolio/unit.jpg" alt="Адаптианый лэндинг">
+            <h3  class="card-title"> Адаптивный лэндинг </h3>
+            <p> Верстка многостраничого сайта. </p>
+        </div>
+          <!--Card portfolio-->
+        <div class="card">
+            <img  class="card-img" src="./img/portfolio/portfolio.jpg" alt= "Личный сайт">
+            <h3  class="card-title"> Личный сайт  </h3>
+            <p> Верстка многостраничого сайта. </p>
+        </div>
+          <!--Card quantim -->
+        <div class="card">
+            <img  class="card-img" src="./img/portfolio/quantum.jpg" alt="многостраничный сайт">
+            <h3  class="card-title"> Интернет магазин </h3>
+            <p> Верстка многостраничого сайта. </p>
+        
+        </div>
+ </div>
+ </div>
+ </div>
+    
+        <div class="footer">
+        <div class="container">
+        <div class="footer-row">
+        <!--div open footer-copyright-->
+        <div class="footer-copyright footer-col">
+            <div class="footer-copyright-name">  @Альберт Доманский </div>
+            <p> HTML верстка и разрабтка сайтов</p>
+        </div>
+        <!-- // div closed footer-copyright-->
+        <!-- Div open icons-->
+            <div class="footer-icons footer-col">
+               <p> Мои профилии в социальных сетях</p>
+            <div class="footer-icons-row">
+                <a href="#">
+                 <img src="./img/icons/instagram.svg" alt=""> 
+                </a>
+                <a href="#">
+                 <img src="./img/icons/facebook.svg" alt=""> 
+                </a>
+                <a href="#">
+                 <img src="./img/icons/vk.svg" alt=""> 
+                </a>
+                <a href="#">
+                 <img src="./img/icons/linkedin.svg" alt=""> 
+                </a>
+                <a href="#">
+                 <img src="./img/icons/github.svg" alt=""> 
+                </a>
+               </div>
+            </div>
+        <!-- // Div closed icons-->
+ 
+<div class="footer-contacts footer-col">
+    <a href="#" class="footer-button">
+        Связаться Вконтакте
+    </a>
+   
+    <p>Напишите мне, чтобы заказать или узнать стоимость верстки вашего проекта.</p>
+</div>
+</div>
+
+    </body>
+</html>

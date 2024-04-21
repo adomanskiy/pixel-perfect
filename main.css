@@ -1,0 +1,237 @@
+*{
+      box-sizing: border-box;
+}
+
+body {
+      margin: 0; /*сайт будет изображен на всю страницу от края до края, без пропусков */
+      font-family: 'Montserrat', sans-serif; /*выбранный шрифит на googleapis*/
+
+}
+
+.container {
+     max-width: 1110px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.none {
+     display: none !important
+}
+
+/* header - стилизация сайта */
+.header {
+      position: relative;
+    /* Выставление текста в центре сайта в блоке .header*/
+      display: flex;
+      flex-direction: column; /* Выстраиваем flex-элементы в колонку, основная ось - Y */
+      
+      justify-content: center; /* Выравнивание по основной оси */
+      align-items: center; /* Выравнивание по поперечной оси */
+
+      width: 100%;
+      height: 100vh;
+    
+    /* Фоновая часть, добавление фона, цвет, размеры, расположение*/
+      background-color: #546982;
+      background-image: url(./../img/header/header-bg.jpg);
+      background-size: cover;
+      background-position: center;
+
+}
+ 
+    /* .header-title - работаем с шапкой сайта (Доманский Альберт) Что указано в HTML 13 и 14 строка */
+.header-title {
+      margin: 0;
+      margin-bottom: 25px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 130%; 
+    
+      text-align: center;
+    
+      color: #FFFFFF;
+}
+
+    /* .header-subtitle - работа с шапкой почты (мелкий шрифт под крупным) html 15 строка */
+.header-subtitle {
+      margin: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+    /* or 24px */
+
+      text-align: center;
+      letter-spacing: 0.2em; /* расстояние между буквами */
+      text-transform: uppercase; /* отвечает за верхний регистер (заглав.буквы) */
+
+      color: #FFFFFF;
+
+}
+    /* ставим "стрелочку" вниз внизу шапки */
+.header-arrow {
+      width: 48px; /* Размеры стрелочки */
+      height: 48px;
+      position: absolute; /* стрелка выставляется в самый низ */
+      bottom: 30px; /* Расстояние от нижней границы сайта */
+      left: 50%;  /* Выставление стрелки по центру сайта */
+      transform: translate(-50%, 0);
+
+}
+
+/* Portfolio */
+
+.portfolio {
+ 
+     padding-top: 80px;
+     padding-bottom: 115px;
+}
+
+.portfolio-header {
+      margin: 0;
+      margin-bottom: 70px;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 130%;
+      text-align: center;
+      color: black;
+}
+
+.portfolio-cards-wrapper {
+
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+}
+
+.card {
+      margin-bottom: 30px;
+      padding: 20px;
+      max-width: 540px;
+      background-color: white;
+      box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+
+}
+
+.card:last-child, .card:nth-last-child(2) {
+      margin-bottom: 0;
+}
+
+
+.card-img {
+      margin-bottom: 20px;
+
+
+
+}
+
+.card-title {
+      margin: 0;
+      margin-bottom: 13px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 130%;
+      color: #000000;
+
+
+} 
+.card p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 130%;
+      color: black;
+
+
+}
+
+.footer {
+      background:  #1E4776;
+      padding-top: 45px;
+      padding-bottom: 130px;
+      color: white;
+
+}
+.footer-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+.footer-col {
+      max-width: 350px;
+      flex-grow: 1;
+}
+.footer-copyright {
+      max-width: 350px;
+      flex-grow: 1;
+      color: #7E9EC9;
+      line-height: 1.3;
+}
+
+.footer-copyright-name {
+    
+
+font-weight: 700;
+font-size: 28px;
+margin-bottom: 15px;
+
+
+}
+
+.footer-copyright p {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      
+}
+
+
+
+.footer-icons p {
+ 
+font-weight: 600;
+font-size: 16px;
+line-height: 1.3;
+
+
+
+}
+
+.footer-icons-row {
+      display: flex;
+      align-items: center;
+
+}
+.footer-icons-row > * + * {
+     
+      margin-left: 30px;
+}
+
+
+
+.footer-button {
+      display: inline-block;
+      height: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+      
+
+      border: 3px solid #FFFFFF;
+      border-radius: 50px;
+      color:white;
+      line-height: 44px;
+ 
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: none;
+     
+}
+
+.footer-contacts p {
+      margin: 15px 0;
+      font-size: 16px;
+      line-height: 1.3;
+      color: #7E9EC9
+}
